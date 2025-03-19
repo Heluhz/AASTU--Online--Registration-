@@ -30,3 +30,16 @@ This repository contains the source code for the **AASTU University Online Regis
 1. Clone the repository:
    ```bash
    git clone https://github.com/Heluhz/aastu-registration-portal.git
+## Group6
+
+Group members                              
+1.Heaven Tadesse……………………..0655/15  
+
+2.Haymanot Girma...............………….0651/15 
+
+3.Helen Zelalem......................………..0660/15 
+
+4.Helen Lemesa……………………….0659/15 
+
+5.Nahom Tesfay…………………..…..0801/11 
+
