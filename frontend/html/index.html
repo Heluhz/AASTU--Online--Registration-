@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Registration Portal</title>
+  <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+        <a href="home page.html" class="logo" ><img src="logos.jpg" class="photo"> </a>
+      <nav>
+        <ul>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Schedule</a></li>
+          <li><a href="#">Account</a></li>
+        </ul>
+      </nav>
+      <div class="logout">
+        <a href="home page.html">Logout</a>
+      </div>
+    </div>
+    
+  </header>
+
+  <main>
+    <section class="student-info">
+      <h2>Student Information</h2>
+      <div class="info-container">
+        <p>Name: Nahom Tesfay</p>
+        <p>ID: ETS0801/11</p>
+        <p>Department: Software Engineering</p>
+        <p>Year: 3</p>
+        <p>Semester: 1</p>
+      </div>
+    </section>
+
+    <section class="semester-courses">
+      <h2>Semester Courses</h2>
+      <div class="table-container">
+        <table id="semesterCoursesTable">
+         <thead>
+                    <tr>
+                      <th>Course Code</th>
+                      <th>Course Title</th>
+                      <th>Credit Hour</th>
+                      <th>Year</th>
+                      <th>Semester</th>
+                      <th>Course Category</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                <tbody>
+                    <tr>
+                        <td>Global Trend</td>
+                        
+                        <td></td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>Common Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="drop-button">Drop</label></td>
+                    </tr>
+                    <tr>
+                        <td>Introduction to Software Engineering and Computing</td>
+                        
+                        <td></td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="drop-button">Drop</label></td>
+                    </tr>
+                    <tr>
+                        <td>Fundamentals of Programming I</td>
+                        
+                        <td></td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="drop-button">Drop</label></td>
+                    </tr>
+                    <tr>
+                        <td>Discrete Mathematics for Software Engineering</td>
+                       
+                        <td></td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="drop-button">Drop</label></td>
+                    </tr>
+                     <tr>
+                        <td>History of Ethiopia and The Horn</td>
+                       
+                        <td></td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>Common Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="drop-button">Drop</label></td>
+                    </tr>
+                     <tr>
+                        <td>Economics</td>
+                        
+                        <td></td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>Common Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="drop-button">Drop</label></td>
+                    </tr>
+                </tbody>
+        </table>
+      </div>
+      <div class="submit">
+      <a href="costsharing.html"><button type="submit" class="submit-button">Submit</button></a>
+      </div>
+    </section>
+
+    <section class="available-courses">
+      <h2>Available Courses</h2>
+      <div class="table-container">
+        <table id="availableCoursesTable">
+        <thead>
+                    <tr>
+                      <th>Course Code</th>
+                      <th>Course Title</th>
+                      <th>Credit Hour</th>
+                      <th>Year</th>
+                      <th>Semester</th>
+                      <th>Course Category</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                <tbody>
+                    <!--Year 2 Semester 2 course-->
+                    <form action="submit-courses.php" method="post">
+                      <tr>  
+                        <td>SWEG2102</td>
+                        <td>Fundamentals of Programming II</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+                      <tr>
+                        <td>EEng2004</td>
+                        <td>Digital Logic Design</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>Common Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+                      <tr>
+                        <td>SWEG2106</td>
+                        <td>Data Communication and Computer Networks</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+                      <tr>
+                        <td>SWEG2108</td>
+                        <td>Database Systems</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+                      <tr>
+                        <td>Stat2091</td>
+                        <td>Probability and Statistics</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>Common Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+
+                      <!--Year 3 Semester 1 course-->
+                      <tr>
+                        <td>SWEG3103</td>
+                        <td>Data Structure and Algorithms</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+                      <tr>
+                        <td>SWEG3105</td>
+                        <td>Computer Organization and Architecture</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+                      <tr>
+                        <td>SWEG3107</td>
+                        <td>Internet Programming I</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+                      
+                      <tr>
+                        <td>SWEG3101</td>
+                        <td>Object Oriented Programming</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+                      <tr>
+                        <td>SWEG3109</td>
+                        <td>System Analysis and Modeling</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+                      <!--Year 3 Semester 2 course-->
+                      <tr>
+                        <td>SWEG3102</td>
+                        <td>Internet Programming II</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+                      <tr>
+                        <td>SWEG3104</td>
+                        <td>Software Requirements Engineering</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+                      <tr>
+                        <td>SWEG3106</td>
+                        <td>Operating Systems</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+                      <tr>
+                        <td>SWEG3108</td>
+                        <td>Advanced Programming</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+                      <tr>
+                        <td>SWEG3110</td>
+                        <td>Formal Language and Automata Theory</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+                      <!--Year 4 Semester 1 course-->
+                      <tr>
+                        <td>SWEG4101</td>
+                        <td>Principles of Compiler Design</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+                      <tr>
+                        <td>SWEG4103</td>
+                        <td>Mobile Computing and Programming</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+                      <tr>
+                        <td>SWEG4105</td>
+                        <td>Software Design and Architecture</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+                      <tr>
+                        <td>SWEG4109</td>
+                        <td>Computer Graphics</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+                      <tr>
+                        <td>SWEG4107</td>
+                        <td>Introduction to Artificial Intelligence</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+                      <tr>
+                        <td>IETP4115</td>
+                        <td>Integrated Engineering Team Project</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+                      <!--Year 4 Semester 2 course-->
+                      <tr>
+                        <td>SWEG4102</td>
+                        <td>Embedded Systems</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+                      <tr>
+                        <td>SWEG4104</td>
+                        <td>Software Project Management</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+                      <tr>
+                        <td>SWEG4106</td>
+                        <td>Software Quality Assurance and Testing</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+                      <tr>
+                        <td>SWEG4108</td>
+                        <td>Research Methods in Software Engineering</td>
+                        <td>2</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+                      <tr>
+                        <td>SWEG4110</td>
+                        <td>Human Computer Interaction</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+                      <tr>
+                        <td>SWEG4112</td>
+                        <td>Introduction to Machine learning</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+                      <tr>
+                        <td>SWEG4114</td>
+                        <td>Industrial Internship</td>
+                        <td>6</td>
+                        <td>4</td>
+                        <td>Summer</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+                      <!--Year 5 Semester 1 course-->
+                      <tr>
+                        <td>SWEG5101</td>
+                        <td>Senior Research Project Phase I</td>
+                        <td>0</td>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+                      <tr>
+                        <td>SWEG5103</td>
+                        <td>Software Configuration Management</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+                      <tr>
+                        <td>SWEG5201</td>
+                        <td>Introduction to Big Data Analytics</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+                      <tr>
+                        <td>SWEG5203</td>
+                        <td>Data Mining and Data Warehousing</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+                      <tr>
+                        <td>SWEG5205</td>
+                        <td>Simulation and Modeling</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+                      <tr>
+                        <td>SWEG5105</td>
+                        <td>Computer System Security</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+                      <tr>
+                        <td>SWEG5107</td>
+                        <td>Software Component Design</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+                      <tr>
+                        <td>SWEG5109</td>
+                        <td>Open Source Software Paradigms</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+                      <tr>
+                        <td>SWEG5111</td>
+                        <td>Distributed Systems</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>Major Course</td>
+                        <td><input type="checkbox" id="myCheckbox" class="checkbox-button" display="none">
+                        <label for="myCheckbox" class="add-button">Add</label></td>
+                      </tr>
+                </tbody>
+        </table>
+       </form>
+      </div>
+    </section>
+  </main>
+  <script src="registration.js"></script>
+</body>
+</html>

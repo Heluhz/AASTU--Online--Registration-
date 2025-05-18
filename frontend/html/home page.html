@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AASTU UNIVERSITY ONLINE REGISTRATION</title>
+    <link rel="stylesheet" href="home page.css">
+    <script src="home page.js"> </script>
+</head>
+<body>
+   
+    <!-- Header Section -->
+    <header>
+    
+        <div class="header">
+            <a href="home page.html" class="logo" ><img src="logos.jpg" class="photo"> </a>
+            <div class="navbar-menu">
+                <a class="right" href="home page.html">Home</a>
+                <div class="dropdown">
+                <a >About Us <span class="arrow">&#9662;</span></a>
+                <div class="dropdown-content">
+                    <a href="vision.html">Our Vision </a>
+                    <a href="mision.html">Our Mission</a>
+                </div>
+            </div>
+    
+                <a href="contact.html">Contact Us</a>
+                <a href="help.html">Help</a>
+             <div class="user-options">
+                <a href="login.html " target="_self">Login</a>
+                </div>
+            </div>
+          
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search...">
+                    <button id="search-button" onclick="performSearch()" class="search-icon">&#x1F50D;
+                </button>
+            </div>
+        </div>
+    </header>
+  
+    <div class="image-slider">
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button> 
+        <div class="slider-container">
+            <img src="aastu.jpg" class="slide">
+            <img src="ict.jpg" class="slide">
+            <img src="masters.jpg" class="slide" >
+            <img src="aastus.jpg" class="slide" >
+        
+        </div>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+    <section class="stats">
+        <div class="stat"><h2 class="count" data-target="12502">0</h2><p>Total Graduated <br>students</p></div>
+        <div class="stat"><h2 class="count" data-target="940">0</h2><p>Postgraduate <br> students</p></div>
+        <div class="stat"><h2 class="count" data-target="6074">0</h2><p>Undergraduate <br> students</p></div>
+        <div class="stat"><h2 class="count" data-target="13">0</h2><p>Undergraduate <br> Programs</p></div>
+        <div class="stat"><h2 class="count" data-target="83">0</h2><p>Postgraduate <br> Programs</p></div>
+    </section>
+
+    <div class="container">
+        <div class="text-section">
+            <h1>About Registrar</h1>
+            <br>
+            <p>
+                The <strong>Addis Ababa Science and Technology</strong> University office of Registrar and Alumni, comprising of six units is primarily focused on serving faculty and students by offering scheduling, registration, record keeping, and reporting services. The office manages student registration, keeps track of grades and academic records, issues diplomas and transcripts, verifies enrollment and graduation, assigns classrooms, and handles the issuance, renewal, and replacement of student identification cards.
+            </p>
+        </div>
+        <div class="image-section">
+            <img src="master.jpg" alt="Graduation Ceremony">
+        </div>
+    
+    </div>
+ 
+    <div class="container">
+        <div class="text-section">
+            <h1>Registration</h1>
+            <br>
+            <p>
+                The registration process at Addis Ababa Science and Technology University (AASTU) is designed to facilitate a smooth transition for prospective students. It begins with the completion of an online application form, where candidates provide personal information, academic history, and their chosen program of study. Applicants must submit essential documents, including academic transcripts and identification, and may be required to take entrance examinations or participate in interviews, depending on the program. Once accepted, students will receive notification of their admission status and must complete the registration process by paying tuition fees, selecting courses, and attending orientation sessions. Upon successful registration, students are issued a student ID, granting them access to university resources and facilities. This comprehensive process ensures that students are well-prepared to embark on their academic journey at AASTU, where a diverse range of undergraduate, master’s, and PhD programs are available in fields such as Applied Sciences, Engineering, and Technology.
+            </p>
+        </div>
+        <div class="image-section">
+            <img src="man.jpg" alt="Graduation Ceremony">
+        </div>
+    </div>
+    <div class="container">
+        <div class="text-section">
+            <h1>Key Feature About our University</h1>
+             <br>
+            <p>
+                The <strong>Addis Ababa Science and Technology</strong> University offers a diverse range of academic programs, including undergraduate, master's, and PhD degrees. These programs span various disciplines, with a strong emphasis on Applied Sciences, Engineering, and Technology. The university is committed to providing high-quality education and research opportunities, equipping students with the skills and knowledge necessary to excel in their respective fields.
+
+                Students can choose from a variety of specialized tracks, enabling them to tailor their education to meet their career aspirations. The university's curriculum is designed to foster innovation and critical thinking, preparing graduates to contribute effectively to the scientific and technological advancements in society.
+            </p>
+        </div>
+        <div class="image-section">
+            <img src="reg.jpg" alt="Graduation Ceremony">
+        </div>
+    </div>
+    <section class="enroll">
+      <h2>Ready to enroll in our University? </h2>
+      <button class="enroll-button" onclick="location.href='home page.html'">Read More</button>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="connect-with-us">
+                <h3>CONNECT WITH US</h3>
+                <br>
+                <a href="https://www.youtube.com/@aastu_official7418" target="_self">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
+                  </a>
+                <a href="https://web.facebook.com/aastu.edu.et/?_rdc=1&_rdr#" target="_self"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"></a>
+                <a href="https://www.linkedin.com/school/addis-ababa-science-and-technology-university/posts/?feedView=all" target="_self"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" 
+                    alt="LinkedIn Logo" 
+                    style="width: 30px; height: 30px;">
+             </a>
+                <a href="https://www.instagram.com/" target="_self"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+<script>
+let currentSlideIndex = 0; // Tracks the current slide
+    const slides = document.querySelectorAll('.slide');
+    
+    // Function to display the current slide
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.style.display = (i === index) ? 'block' : 'none';
+        });
+    }
+    
+    // Display the first slide on page load
+    showSlide(currentSlideIndex);
+    
+    // Function to change the slide
+    function changeSlide(direction) {
+        currentSlideIndex += direction;
+    
+        // Loop around if reaching the end or beginning
+        if (currentSlideIndex >= slides.length) {
+            currentSlideIndex = 0;
+        } else if (currentSlideIndex < 0) {
+            currentSlideIndex = slides.length - 1;
+        }
+    
+        showSlide(currentSlideIndex);
+
+    }
+    setInterval(() => {
+    changeSlide(1); // Automatically switch to the next slide every 3 seconds
+}, 3000);
+
+// Select all elements with the class 'count'
+const counters = document.querySelectorAll('.count');
+
+counters.forEach(counter => {
+    // Set the target value from the data-target attribute
+    const target = +counter.getAttribute('data-target');
+    // Set initial count
+    let count = 0;
+    // Set the increment value based on target (adjust for smoother animation)
+    const increment = target / 100;
+
+    // Define a function to update the counter
+    function updateCounter() {
+        count += increment;
+        if (count < target) {
+            counter.textContent = Math.ceil(count); // Display rounded-up value
+            setTimeout(updateCounter, 30); // Update every 15ms
+        } else {
+            counter.textContent = target; // Set final count to the target value
+        }
+    }
+
+    // Start the counter
+    updateCounter();
+});
+
+
+
+
+</script>
+
+</body>
+</html>
