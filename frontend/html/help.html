@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Help Center</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ body {
+            font-family: 'Times New Roman';
+            line-height: 1.6;
+            background-color: #eae7f2;
+            color: #333;
+        }
+        /* Resetting margin and padding */
+
+.photo{
+    
+    width: 50px; /* Set the desired width */
+    height: 50px; /* Set the desired height */
+    border-radius: 5%; /* This makes the image circular */
+    object-fit: cover; /* This ensures the image covers the area */
+    border: 2px solid #ccc; /* Optional: adds a border */
+   
+}
+.navbar-menu {
+    display: flex;
+    flex-grow: 1;
+    gap: 20px;
+}
+.navbar-menu > div {
+    position: relative;
+    margin-right: 20px;
+    gap: 20px;
+
+}
+.navbar-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+.navbar-menu a:hover {
+    background-color: #e1e8e81e;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #dce0e1;
+    color: #002147;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+}
+.dropdown-content a {
+    color: #002147;
+    padding: 8px 12px;
+    display: block;
+    margin-top: px;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.header{
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    padding:1rem 2rem;
+    font-size: 15px;
+    background-color: #7a4abd;
+    color: #fff;
+}
+
+.header-top .logo {
+    font-size: 1.5rem;
+    color:#ececec;
+    text-decoration: none;
+}
+.contact-info span, .header-right span {
+    margin-right: 15px;
+}
+
+.search-input{
+
+        width: 200px;
+        height: 20px;
+        padding: 10px 10px;
+        font-size: 16px;
+        border: 2px solid #895ec5;
+        border-radius: 5px;
+        background-color: #dcd7d7;
+}
+.main-nav a, .user-options a {
+    color: #fff;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+.arrow {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+        h1, h2 {
+            color: #895ec5; /* University blue - adjust as needed */
+        }
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto; /* Center the content */
+         
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .faq-item {
+            margin-bottom: 15px;
+        }
+        .faq-item h3 {
+            color: #121013;
+            cursor: pointer;
+        }
+        .faq-item .answer {
+            display: none;
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+        .faq-item.active .answer {
+            display: block;
+        }
+        a {
+            color: #895ec5;
+            text-decoration: none;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            font-style: italic;
+        }
+        .university-logo { /* Add space for logo */
+            max-width: 200px;
+            margin: 20px auto;
+            display: block; /* Center the logo */
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+    
+        <div class="header">
+            <a href="home page.html" class="logo" ><img src="logos.jpg" class="photo"> </a>
+            <div class="navbar-menu">
+                <a class="right" href="home page.html">Home</a>
+                <div class="dropdown">
+                <a >About Us <span class="arrow">&#9662;</span></a>
+                <div class="dropdown-content">
+                    <a href="vision.html">Our Vision </a>
+                    <a href="mision.html">Our Mission</a>
+                </div>
+            </div>
+    
+                <a href="contact.html">Contact Us</a>
+                <a href="help.html">Help</a>
+             <div class="user-options">
+                <a href="login.html " target="_self">Login</a>
+                </div>
+            </div>
+          
+            <div class="header-right">
+                <input type="text" placeholder="Search" class="search-input">
+                <button class="search-icon">&#x1F50D;</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>University Help Center</h1>
+        <br>
+        <p>Need assistance?  We're here to help you navigate university resources and services.</p>
+
+        <section class="card">
+            <h2>Frequently Asked Questions (FAQ)</h2>
+            <div class="faq-item">
+                <h3 onclick="toggleFAQ(this)">How do I access my student portal?</h3>
+                <div class="answer">
+                    <p>Access your student portal at <a href="#">student.exampleuniversity.edu</a>.  Your username is your student ID number, and your initial password is your date of birth (MMDDYYYY).</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFAQ(this)">How do I register for classes?</h3>
+                <div class="answer">
+                    <p>Registration details and instructions can be found on the <a href="#">Registrar's Office website</a>.</p>
+                </div>
+            </div>
+            </section>
+
+        <section class="card">
+            <h2>IT Help</h2>
+            <p>For technical support with university systems, contact the IT Help Desk:</p>
+            <ul>
+                <li>Phone: 011 543-2756</li>
+                <li>Email: <a href="mailto:registrar@aastuniversity.edu">registrar@aastuniversity.edu</a></li>
+                <li>Online Help: <a href="#">registrar.aastuniversity.edu</a></li>
+            </ul>
+        </section>
+
+
+        <section class="card">
+            <h2>Contact Us</h2>
+            <p>For general inquiries or if your question isn't addressed here, please contact us:</p>
+            <p class="contact-info">Email: <a href="mailto:registrar@aastuniversity.edu">registrar@aastuniversity.edu</a><br>Phone: 011 543-2756</p>
+        </section>
+    </div>
+
+    <script>
+        function toggleFAQ(element) {
+            element.parentElement.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
