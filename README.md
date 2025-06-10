@@ -89,7 +89,7 @@ This repository contains the source code for the **AASTU University Online Regis
 
 | Name           | ID      |
 | -------------- | ------- |
-| Heaven Tadesse | 0655/15 |
+| Heaven Tadesse | 0655/15 |(uses Dureti_hailu git acc)
 | Haymanot Girma | 0651/15 |
 | Helen Zelalem  | 0660/15 |
 | Helen Lemesa   | 0659/15 |
